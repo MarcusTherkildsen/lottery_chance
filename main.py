@@ -94,12 +94,13 @@ if __name__ == '__main__':
 
     ticket_price = 7 # 50 dkk or 7 dollars
     total_price = 7*52*10000*ticket_price
+    prize = 0.73*10**6#5 M dkk, 0.73 M dollars
 
     # If we imagine that we win when we hit these 25% and the prize money is
     # 5 M dkk or 3.65 M dollars then the total "winnings" will be
 
-    print 'Prize - price of lottery tickets = ' + str(5000000 - total_price)
-    print 'I.e. we lost ' + str(int((-(5000000 - total_price))/1000000)) + ' M dollars.'
+    print 'Prize - price of lottery tickets = ' + str(prize - total_price)
+    print 'I.e. we lost ' + str(round((-(prize - total_price))/1000000,1)) + ' M dollars.'
 
     '''
     Plot
